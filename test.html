@@ -1,32 +1,7 @@
 <!DOCTYPE html>
-<h1>Test</h1>
-<p>NoGravity:</p>
+<h1>Loading...</h1>
+<p>Making requests to ModWeaver API...</p>
 <script>
-    /*var response = fetch('http://0.0.0.0/api/project/nogravity').then(function(response) {
-        return response.json();
-    }).then(function(data) {
-        document.write("Name: " + data.name);
-        document.write("<br>");
-        document.write("Summary: " + data.summary);
-        document.write("<br>");
-        document.write("Description: " + data.description);
-        document.write("<br>");
-        console.log(data.requires.length)
-        for (var i = 0; i < data.requires.length; i++) {
-            document.write("Requires: " + data.requires[i]["id"]);
-            console.log(data.requires[i]["id"])
-            document.write("<br>");
-        }
-        for (var i = 0; i < data.requires.length; i++) {
-            for (var j = 0; j < data.requires[i].length; j++) {
-                document.write("Requires: " + data.requires[i][j]);
-                document.write("<br>");
-            }
-        }
-        //document.write("Requires: " + data.requires);
-        document.write("<br>");
-        document.write("<a href=\"" + data.download + "\">Download</a>");
-    });*/
     var tab = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
     var projects = fetch('http://localhost:5000/api/list_projects').then(function (response) {
         return response.json();
