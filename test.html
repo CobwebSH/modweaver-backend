@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<h1>Test</h1>
+<p>NoGravity:</p>
+<script>
+    /*var response = fetch('http://0.0.0.0/api/project/nogravity').then(function(response) {
+        return response.json();
+    }).then(function(data) {
+        document.write("Name: " + data.name);
+        document.write("<br>");
+        document.write("Summary: " + data.summary);
+        document.write("<br>");
+        document.write("Description: " + data.description);
+        document.write("<br>");
+        console.log(data.requires.length)
+        for (var i = 0; i < data.requires.length; i++) {
+            document.write("Requires: " + data.requires[i]["id"]);
+            console.log(data.requires[i]["id"])
+            document.write("<br>");
+        }
+        for (var i = 0; i < data.requires.length; i++) {
+            for (var j = 0; j < data.requires[i].length; j++) {
+                document.write("Requires: " + data.requires[i][j]);
+                document.write("<br>");
+            }
+        }
+        //document.write("Requires: " + data.requires);
+        document.write("<br>");
+        document.write("<a href=\"" + data.download + "\">Download</a>");
+    });*/
+    var tab = "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+    var projects = fetch('http://localhost:5000/api/list_projects').then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        console.log(data);
+        for (var i = 0; i < data.length; i++) {
+            var mod = fetch('http://localhost:5000/api/project/' + data[i]).then(function (response) {
+                return response.json();
+            }).then(function (data) {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("Name: " + data.name);
+                document.write("<br>");
+                document.write("Summary: " + data.summary);
+                document.write("<br>");
+                document.write("Description: " + data.description);
+                document.write("<br>");
+                document.write("Latest Version: " + data.latest_version);
+                document.write("<br>");
+                document.write("Versions:");
+                for (var j = 0; j < data.versions.length; j++) {
+                    document.write("<br>");
+                    document.write(tab + " Version: " + data.versions[j]["version"]);
+                    document.write("<br>");
+                    document.write(tab + tab + " <a href=\"" + data.versions[j]["url"] + "\">Download</a> ");
+                    document.write("<br>");
+                    document.write(tab + tab + " Requires: ");
+                    for (var k = 0; k < data.versions[j]["requires"].length; k++) {
+                        console.log(data.versions[j]["requires"][k]);
+                        if (data.versions[j]["requires"][k]["is_in_api"]) {
+                            version = data.versions[j]["requires"][k]["version"];
+                            let mod_name = fetch('http://localhost:5000/api/project/' + data.versions[j]["requires"][k]["id"]).then(function (response) {
+                                return response.json();
+                            }).then(function (data) {
+                                document.write("<br>");
+                                document.write(tab + tab + tab + " <code>" + data.name + " v" + version + "</code>");
+
+                            });
+                        } else if (data.versions[j]["requires"][k]["id"] == "spiderheck") {
+                            document.write("<br>");
+                            document.write(tab + tab + tab + " <code>SpiderHeck v" + data.versions[j]["requires"][k]["version"] + "</code>");
+                        } else if (data.versions[j]["requires"][k]["id"] == "bepinex") {
+                            document.write("<br>");
+                            document.write(tab + tab + tab + " <code>BepInEx v" + data.versions[j]["requires"][k]["version"] + "</code>");
+                        } else {
+                            document.write("<br>")
+                            document.write(tab + tab + tab + " <code>" + data.versions[j]["requires"][k]["id"] + "</code>");
+                        }
+                    }
+                }
+
+            });
+        }
+    });
+
+
+
+</script>

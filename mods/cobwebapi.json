@@ -1,9 +1,26 @@
 {
     "name": "CobwebAPI",
     "author": "Cobweb_Team",
-    "version": "1.0",
-    "summary": "API for modders to use",
-    "description": "API for modders to use, does nothing by itself. Docs for CobwebAPI are WIP: https://github.com/CobwebSH/CobwebAPI/wiki",
-    "requires": [{"id":"bepinex", "version":"6"}, {"id":"spiderheck", "version":"0.76"}],
-    "download": "https://github.com/ExoPlant/NoGravity/releases/latest/download/NoGravity.dll"
+    "source": "https://github.com/CobwebSH/CobwebAPI",
+    "versions": [
+        {
+            "version": "1.0.0",
+            "url": "https://github/CobwebSH/CobwebAPI/releases/download/1.0.0/CobwebAPI.dll",
+            "requires": [
+                {
+                    "id": "bepinex",
+                    "version": "6",
+                    "is_in_api": false
+                },
+                {
+                    "id": "spiderheck",
+                    "version": "0.76",
+                    "is_in_api": false
+                }
+            ]
+        }
+    ],
+    "latest_version": "1.0.0",
+    "summary": "API for developers. Does nothing by itself.",
+    "description": "API for developers. Does nothing by itself. To use this, you need a mod that implements it (see the wiki for more info)."
 }
