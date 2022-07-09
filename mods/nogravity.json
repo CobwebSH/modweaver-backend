@@ -1,6 +1,6 @@
 {
     "name": "NoGravity",
-    "author": "Exo",
+    "author": "Ecorous",
     "source": "https://github/ExoPlant/NoGravity/",
     "versions": [
         {
@@ -43,6 +43,6 @@
     ],
     "latest_version": "1.1.0",
     "summary": "Removes gravity from the game.",
-    "description": "Removes gravity from the gamhttps://get.pxhere.com/photo/spider-insect-arachnid-yellow-sky-invertebrate-araneus-orb-weaver-spider-arthropod-macro-photography-organism-european-garden-spider-spider-web-1451873.jpge. \n Requires CobwebAPI. \n \n This mod is made by Ecorous.",
+    "description": "Removes gravity from the game. \n Requires CobwebAPI. \n \n This mod is made by Ecorous.",
     "icon_url": "https://get.pxhere.com/photo/spider-insect-arachnid-yellow-sky-invertebrate-araneus-orb-weaver-spider-arthropod-macro-photography-organism-european-garden-spider-spider-web-1451873.jpg"
 }

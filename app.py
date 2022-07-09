@@ -5,6 +5,12 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
+def root():
+    resp = app.make_response("{\"404\":\"Not Found\"}")
+    resp.status_code = 200
+    resp.mimetype = 'application/json'
+    return resp
+    
 def four_zero_four():
     resp = app.make_response("{\"404\":\"Not Found\"}")
     resp.status_code = 404
