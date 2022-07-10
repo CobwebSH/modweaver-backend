@@ -22,5 +22,6 @@
     ],
     "latest_version": "1.0.0",
     "summary": "API for developers. Does nothing by itself.",
-    "description": "API for developers. Does nothing by itself. To use this, you need a mod that implements it (see the wiki for more info)."
+    "description": "API for developers. Does nothing by itself. To use this, you need a mod that implements it (see the wiki for more info).",
+    "icon_url": ""
 }
