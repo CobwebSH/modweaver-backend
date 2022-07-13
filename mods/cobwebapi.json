@@ -5,7 +5,7 @@
     "versions": [
         {
             "version": "1.0.0",
-            "url": "https://github/CobwebSH/CobwebAPI/releases/download/1.0.0/CobwebAPI.dll",
+            "url": "https://github.com/CobwebSH/CobwebAPI/releases/download/1.0.0/CobwebAPI.dll",
             "requires": [
                 {
                     "id": "bepinex",
