@@ -18,6 +18,22 @@
                     "is_in_api": false
                 }
             ]
+        },
+        {
+            "version": "1.1.0",
+            "url": "https://github.com/cobwebsh/CobwebAPI/releases/download/1.1.0/CobwebAPI.dll",
+            "requires": [
+                {
+                    "id": "bepinex",
+                    "version": "6",
+                    "is_in_api": false
+                },
+                {
+                    "id": "spiderheck",
+                    "version": "0.86.3",
+                    "is_in_api": false
+                }
+            ]
         }
     ],
     "latest_version": "1.0.0",
