@@ -2,6 +2,7 @@
     "name": "CobwebAPI",
     "author": "Cobweb_Team",
     "source": "https://github.com/CobwebSH/CobwebAPI",
+    "type": "mod",
     "versions": [
         {
             "version": "1.0.0",

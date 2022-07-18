@@ -2,6 +2,7 @@
     "name": "NoGravity",
     "author": "Ecorous",
     "source": "https://github/ExoPlant/NoGravity/",
+    "type": "mod",
     "versions": [
         {
             "version": "1.0.0",
