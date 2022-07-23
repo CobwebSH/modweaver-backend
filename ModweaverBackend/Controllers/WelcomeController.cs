@@ -16,8 +16,11 @@ public class WelcomeController : ControllerBase
     }
     
     [HttpGet(Name = "welcome")]
-    public String Get()
+    public IDictionary<String, String> Get()
     {
-        return "{\"message\": \"Welcome traveller!\", \"docs\": \"https://github.com/cobwebsh/modweaver-backend/wiki\"}";
+        IDictionary<string, string> thing = new Dictionary<string, string>();
+        thing.Add("message", "Welcome traveller!");
+        thing.Add("documentation", "https://github.com/cobwebsh/modweaver-backend/wiki");
+        return thing;
     }
 }

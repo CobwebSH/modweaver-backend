@@ -23,6 +23,7 @@ if (app.Environment.IsDevelopment())
 app.Use(async (context, next) =>
 {
     context.Response.Headers.Add("Content-Type", "application/json");
+    context.Response.Headers.Add("Access-Control-Allow-Origin", "*");
     await next.Invoke();
 });
 
