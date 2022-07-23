@@ -1,0 +1,49 @@
+{
+  "name": "NoGravity",
+  "author": "Ecorous",
+  "source": "https://github/ExoPlant/NoGravity/",
+  "type": "mod",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "url": "https://github.com/ExoPlant/NoGravity/releases/download/1.0.0/NoGravity.dll",
+      "requires": [
+        {
+          "id": "bepinex",
+          "version": "6",
+          "is_in_api": false
+        },
+        {
+          "id": "spiderheck",
+          "version": "0.76",
+          "is_in_api": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "url": "https://github.com/ExoPlant/NoGravity/releases/download/1.1.0/NoGravity.dll",
+      "requires": [
+        {
+          "id": "cobwebapi",
+          "version": "1.0.0",
+          "is_in_api": true
+        },
+        {
+          "id": "bepinex",
+          "version": "6",
+          "is_in_api": false
+        },
+        {
+          "id": "spiderheck",
+          "version": "0.76",
+          "is_in_api": false
+        }
+      ]
+    }
+  ],
+  "latest_version": "1.1.0",
+  "summary": "Removes gravity from the game.",
+  "description": "Removes gravity from the game. \n Requires CobwebAPI.",
+  "icon_url": "https://get.pxhere.com/photo/spider-insect-arachnid-yellow-sky-invertebrate-araneus-orb-weaver-spider-arthropod-macro-photography-organism-european-garden-spider-spider-web-1451873.jpg"
+}

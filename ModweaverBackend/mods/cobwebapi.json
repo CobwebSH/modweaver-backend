@@ -1,0 +1,44 @@
+{
+  "name": "CobwebAPI",
+  "author": "Cobweb_Team",
+  "source": "https://github.com/CobwebSH/CobwebAPI",
+  "type": "mod",
+  "versions": [
+    {
+      "version": "1.0.0",
+      "url": "https://github.com/CobwebSH/CobwebAPI/releases/download/1.0.0/CobwebAPI.dll",
+      "requires": [
+        {
+          "id": "bepinex",
+          "version": "6",
+          "is_in_api": false
+        },
+        {
+          "id": "spiderheck",
+          "version": "0.76",
+          "is_in_api": false
+        }
+      ]
+    },
+    {
+      "version": "1.1.0",
+      "url": "https://github.com/cobwebsh/CobwebAPI/releases/download/1.1.0/CobwebAPI.dll",
+      "requires": [
+        {
+          "id": "bepinex",
+          "version": "6",
+          "is_in_api": false
+        },
+        {
+          "id": "spiderheck",
+          "version": "0.86.3",
+          "is_in_api": false
+        }
+      ]
+    }
+  ],
+  "latest_version": "1.0.0",
+  "summary": "API for developers. Does nothing by itself.",
+  "description": "API for developers. Does nothing by itself. To use this, you need a mod that implements it (see the wiki for more info).",
+  "icon_url": ""
+}
