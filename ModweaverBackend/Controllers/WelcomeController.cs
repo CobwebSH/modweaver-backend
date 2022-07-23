@@ -16,6 +16,6 @@ public class WelcomeController : ControllerBase
     [HttpGet(Name = "welcome")]
     public String Get()
     {
-        return "{\"message\": \"Welcome traveller!\", \"docs\": \"https://github.com/cobwebsh/modweaver-backend/wiki/\"}";
+        return "{\"message\": \"Welcome traveller!\", \"docs\": \"https://github.com/cobwebsh/modweaver-backend/wiki\"}";
     }
 }
