@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Immutable;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.Remoting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -37,6 +38,9 @@ public class ListProjectsController : ControllerBase
         //response = "";
         var r = response.ToList();
         r.Remove("");
+        HttpResponseMessage responseMessage = new HttpResponseMessage(HttpStatusCode.OK);
+        responseMessage.Headers.Add("Access-Control-Allow-Origin", "*");
+        responseMessage.Headers.Add("Content-Type", "application/json");
         return r;
     }
 }
